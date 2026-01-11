@@ -1,0 +1,8 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/krishnaik06/datasets/blob/main/winequality-data.zip?raw=true
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+##this code downloads the zip file from the url and then saves the zip file in the local_data_file then extracts and stores it in the unzipped data dir
