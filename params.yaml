@@ -1,2 +1,11 @@
-key: value
+# key: value
 ##we just defined this zu it cant be empty while we are runnng step 6 code in research file
+
+
+#we are now of the model_trainer step so we are defining the params for the model
+#here we will just define one parameter and and use that we wont go for hyperparameter tuning here but in next projects we will take multiple parameters and perfomr hyperparameter tuning 
+
+
+ElasticNet:
+  alpha: 0.2
+  l1_ratio: 0.1
