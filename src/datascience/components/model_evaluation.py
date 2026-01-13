@@ -12,11 +12,11 @@ from src.datascience.utils.common import read_yaml, create_directories,save_json
 
 from src.datascience.entity.config_entity import ModelEvaluationConfig
 
-#import os
-#os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/rajsinghharsh1611/datascienceproject.mlflow"
-#os.environ["MLFLOW_TRACKING_USERNAME"]="rajsinghharsh1611"
-#os.environ["MLFLOW_TRACKING_PASSWORD"] = "16c89d26c146f3bc85f6c380cc89ff652f2e866c"##this is the ecret access key
-##if we wont import this all then it will create a ml run folder in this folder and wont update on the server as these are required for servrer side tracking
+import os
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/rajsinghharsh1611/datascienceproject.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="rajsinghharsh1611"
+os.environ["MLFLOW_TRACKING_PASSWORD"] = "16c89d26c146f3bc85f6c380cc89ff652f2e866c"##this is the ecret access key
+#if we wont import this all then it will create a ml run folder in this folder and wont update on the server as these are required for servrer side tracking
 
 class ModelEvaluation:
     def __init__(self,config: ModelEvaluationConfig):
